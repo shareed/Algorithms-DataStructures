@@ -85,6 +85,8 @@ EXAMPLE:
 - you can drop constants, drop coefficients, and drop all but the highest scaling factor for each type of input
 
 **Big-O notation and complexity are at the heart of all algorithm and data structure discussion. These can be complicated topics, and there are entire college classes devoted to covering them. These are things a good programmer is expected to understand.**
+___________________
+- The act of creating variables, returning values, and checking conditions are all O(1) operations – they're just a single step or statement
 
 
 
