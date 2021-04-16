@@ -9,3 +9,8 @@
 - The different ways of organizing data in programs are called data structures 
 - designing an efficient algorithm requires using the right data structure, so it’s important to know your options before you start
 **The programs you write for fun might not benefit from improvements to algorithmic complexity, but these concepts matter a lot to every software company in the world. If their software is too slow, their users are less productive. If a webpage takes too long to load, nobody will look at it. Strong algorithms can be the difference between success and failure for a startup.**
+____________________
+
+### Review More 
+- Big O Notation
+- [List](LIST.md)
