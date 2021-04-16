@@ -1,5 +1,6 @@
 # Algorithms-DataStructures
 - a series of steps taken to solve a particular type of problem, the actual inputs given may be different
+- take in some number of inputs and produce some kind of output
 - a program is made up of multiple smaller algorithms
 - we use time and memory resources to rank and evaluate algorithms(they are ranked by their time and memory requirements)
 - an algorithm that runs faster and requires less memory is going to be a superior one
