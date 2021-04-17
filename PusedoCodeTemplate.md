@@ -11,3 +11,5 @@
     - explanation
 2. variable:
     - explanation
+
+**Functionality**

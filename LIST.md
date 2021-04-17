@@ -47,7 +47,7 @@
 **This is really only that fast if you're inserting or removing at the head of a linked list, and the tail of a doubly-linked list. Inserting or removing from somewhere in the middle of the list would first require searching to that position, which makes the overall operation O(n).**
 
 
-#### Singly-Linked List
+### Singly-Linked List
 - can only move forward through the list's nodes, not backwards
 
 ##### Example: Given a singly-linked list. How would you write an algorithm that removes all duplicate values from the linked list?**
@@ -76,5 +76,13 @@
 - If there's no match, the runner is moved to the next node : `runner = runner.next`
 **That loop will run until the runner is at the end of the list.When it ends, the current node is moved to the next node in the list after the head, and the process continues.**
 
-When the algorithm finishes:
-- We will have checked every node, and removed every duplicate of each node that came after the first occurrence.This algorithm iterates over the list once with the “current” pointer, but the “runner” pointer also iterates over each node, each iteration containing one less node than the one before it.This will run in O(n^2) time – a rather complex algorithm, but the best we can do without being able to track what numbers we've encountered as we iterate through.How do we know it's O(n^2)?Let's plot it out.Here I've drawn a sample linked list with 4 nodes, like a chain.Beneath that, I've written out the number of iterations the first loop will run – one for each node, so 4.For each iteration, I'm going to check if the runner visited the corresponding node.In the first iteration, the runner starts at the head, and checks the data of each node after that, until the runner exits the list – when the runner is null.Then on the next iteration, the current pointer will be at the second node, and the runner visits that node and every one thereafter.This continues on, and we notice that our checkboxes form the shape of a half-filled in square.We know the area of a square is x^2, and half that is of course x^2/2.Our nested loops therefore run O(n^2/2) times, but with Big-O notation we ignore coefficients, so that simplifies to O(n^2).In practice, linked lists aren't used as much as other data structures.Plain lists or arrays are better for just storing elements, and there are other data structures that are just as fast at inserts and deletes, and faster at searching.But linked lists still have their place, and you should understand how to use them.
+
+### Doubly-linked list
+- each node has variables for both the “next” node and the “previous” node
+________________________
+
+### Circular linked list
+- the last node in the list stores a reference to the head in its “next” field, creating a circular link. 
+
+<!-- When the algorithm finishes:
+- We will have checked every node, and removed every duplicate of each node that came after the first occurrence.This algorithm iterates over the list once with the “current” pointer, but the “runner” pointer also iterates over each node, each iteration containing one less node than the one before it.This will run in O(n^2) time – a rather complex algorithm, but the best we can do without being able to track what numbers we've encountered as we iterate through.How do we know it's O(n^2)?Let's plot it out.Here I've drawn a sample linked list with 4 nodes, like a chain.Beneath that, I've written out the number of iterations the first loop will run – one for each node, so 4.For each iteration, I'm going to check if the runner visited the corresponding node.In the first iteration, the runner starts at the head, and checks the data of each node after that, until the runner exits the list – when the runner is null.Then on the next iteration, the current pointer will be at the second node, and the runner visits that node and every one thereafter.This continues on, and we notice that our checkboxes form the shape of a half-filled in square.We know the area of a square is x^2, and half that is of course x^2/2.Our nested loops therefore run O(n^2/2) times, but with Big-O notation we ignore coefficients, so that simplifies to O(n^2).In practice, linked lists aren't used as much as other data structures.Plain lists or arrays are better for just storing elements, and there are other data structures that are just as fast at inserts and deletes, and faster at searching.But linked lists still have their place, and you should understand how to use them. -->
